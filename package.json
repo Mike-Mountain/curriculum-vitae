@@ -2,8 +2,9 @@
   "name": "curriculumvitae",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
+    "build": "webpack -c webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/Mike-Mountain/curriculum-vitae#readme",
   "devDependencies": {
+    "css-loader": "^5.0.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0"
   }
